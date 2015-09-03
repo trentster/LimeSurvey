@@ -53,11 +53,24 @@ div.htmleditor {
 }
 .menubar a{display:inline-block;}
 
+div .maintitle {
+  background-color: #8B0806;
+  width: 100%;
+}
 
 .menubar select {
     margin-bottom: 0px;
 
 }
+
+div .menubar-left.menubar-right, a {
+    border-bottom: 1px solid transparent; 
+}
+
+div .menubar-left.menubar-right, a:hover{
+    border-bottom: 1px solid #8B0806; 
+}
+
 .qtip-questiontype {
     z-index: 100000;
     background-color: white;
@@ -143,7 +156,7 @@ label, legend {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-size: 1em;
+    font-size: .9em;
 }
 
 /* Make line spacing more compact for advanced question settings */
@@ -161,39 +174,18 @@ div.ui-jqgrid-hbox input, div.ui-jqgrid-hbox input{
     height: auto;
     padding: 0 2px;
 }
-/* fix jqgrid pager width see bug #9555#c32072 */
-#pager_left{width:auto !important}
-
 /* Fix height of browsettable */
-#gview_displayresponses th .qcode {
+.browsetable th .qcode {
     display: block;
-    padding-right:16px; /* leave place for ordering arrow */
     height: auto;
 }
-#gbox_displayresponses.ui-jqgrid .s-ico{
- position:absolute;right:18px;top:0; /* The ordering arrow */
-}
-#gview_displayresponses th .questiontext {
+.browsetable th .questiontext {
     display: block;
-    height: 2.5em;
+    height: 3em;
     overflow: hidden;
 }
-#gbox_displayresponses.ui-jqgrid .ui-jqgrid-htable th div {
-     height: auto;
-}
-/* jqgrid table must take all place if avalaible, but header and footer must not be outside the screen */
-/* Myabe use a pseudo fixd-y solution is a good idea */
-.ui-jqgrid,.ui-jqgrid-view,.ui-jqgrid-titlebar,.ui-jqgrid-toppager,.ui-jqgrid-pager{
-    min-width:100%;
-    max-width:100%;
-    margin-right:0;margin-left:0;
-    box-sizing: border-box
-}
-.grid-wrapper{
-    max-width:100%;
-}
-#surveylist-wrapper{
-    overflow:hidden
+.browsetable td span {
+    min-width:10em;/* This is OK for date time */
 }
 .ui-tooltip.tooltip-text{min-width:15em}
 .templateeditor {
@@ -242,10 +234,7 @@ li input+label { display: inline;}
 .hide {
     display: none !important;
 }
-.hidden { /* Bootstarp 3 */
-  display: none !important;
-  visibility: hidden !important;
-}
+
 #deleteMode input{
     margin-left:2em;
 }
@@ -255,10 +244,3 @@ li input+label { display: inline;}
 }
 
 #quotalist form{display:inline;}
-
-/* For Permissions settings */
-.mixed{opacity:0.4;}
-/* For the iframe in dialog */
-iframe#dialog{display:block; width:100%!important; height:100%!important;margin:0;padding:0;border:0}
-/* fix .form30 css for cke_editor table */
-.form30 table.cke_editor{float:none}

@@ -7,7 +7,7 @@ html, body {
 }
 
 body {
-    font-family: verdana, arial, sans-serif;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     text-align: left;
     background-color: #fefefe;
     color: #666;
@@ -59,6 +59,11 @@ hr{
     clear: both;
 }
 
+.footer img {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
 .push {
     height: 40px;
     clear: both;
@@ -96,9 +101,9 @@ legend {
 }
 
 .maintitle {
-    font-size: 14pt;
+    font-size: 13pt;
     font-weight: 700;
-    color: #8CCE00;
+    color: #f7eee3;
     text-align: left;
     padding:0.2em 1em 0.2em 0.2em;
     border-bottom: 1px solid #eee;
@@ -128,7 +133,7 @@ div.menubar {
     clear:left;
     padding:0;
     margin:0 auto !important;
-    width: 99%;
+    width: 100%;
     display:inline-block;
 }
 
@@ -159,8 +164,8 @@ div.menubar .ui-widget-header
     width: 99.6%;
     font-size: 11px;
     text-align: left;
-    border-color: #efefef;
-    background-color:#EFFBDB;
+    border-color: #fff;
+    background-color:#F6E6D7;
     padding:0 0.2%;
     min-height:14px;
 }
@@ -359,7 +364,7 @@ textarea {
 }
 
 .settingentryhighlight {
-    color: #94D200;
+    color: #93000b;
     font-weight: bold;
 }
 
@@ -449,7 +454,7 @@ tr.even, .evenrow
     background-color: #fff;
 }
 tr.odd,.oddrow,.answertable tr.highlight {
-    background-color: #EFFBDB;
+    background-color: #F7EEE3;
 }
 
 tr.editedrow{
@@ -502,7 +507,6 @@ th.admincell {
 
 .btnaddanswer,
 .btndelanswer,
-.btntogglerelevance,
 .header_statistics img {
     cursor:pointer;
 }
@@ -736,7 +740,7 @@ ul.assessmentscope li label:first-child {
 
 .browsetable tfoot td {
     text-align: left;
-    background-color: #EFFBDB;
+    background-color: #F6E6D7;
     padding:4px;
 }
 
@@ -779,7 +783,7 @@ ul.assessmentscope li label:first-child {
 .answertable th {
     font-weight:bold;
     font-size: 8pt;
-    padding:3px 3px 3px 1px;
+    padding:3px;
 }
 
 .answertable tr {
@@ -999,7 +1003,7 @@ table.statisticstable, table.statisticssummary {
 .statisticsbrowsecolumn {
     text-align: left;
     width: 100%;
-    background-color: #EFFBDB;
+    background-color: #F6E6D7;
 }
 .statisticscolumnid {
     float: left;
@@ -1015,13 +1019,14 @@ table.statisticstable, table.statisticssummary {
 div.messagebox {
     width: 550px;
     margin:10px auto;
-    background-color: #EFFBDB;
+    background-color: #e6cdb6;
     text-align: center;
     padding:10px;
 }
 
 div.messagebox .header{
     padding:10px;
+    text-align: center;
 }
 
 div.successheader{
@@ -1045,7 +1050,7 @@ div.uploadsummary li {
 div.warningheader, div.messagebox .warningheader{
     font-weight:bold;
     color:#85BD00;
-    background-color: #EFFBDB;
+    background-color: #F6E6D7;
     margin: 5px 0;
     padding:2px;
 }
@@ -1146,7 +1151,7 @@ div.partialheader{
 .data-entry-tbl .data-entry-separator td {
     padding: 0;
     height: 2px;
-    background-color: #EFFBDB;
+    background-color: #F6E6D7;
 }
 
 .data-entry-explanation {
@@ -1159,8 +1164,6 @@ div.partialheader{
     background-color:#f8f8ff;
     padding:1% 10%;
 }
-
-
 
 textarea.updater-changelog {
     width:800px;
@@ -1329,7 +1332,7 @@ thead tr .headerSortDown {
 }
 
 thead tr .headerSortDown, thead tr .headerSortUp {
-    background-color: #888;
+    background-color: #ccc;
     color:#fff;
 }
 
@@ -1389,7 +1392,7 @@ div.right {
 }
 
 .statistics-tbl-separator td {
-    background-color:#EFFBDB;
+    background-color:#F6E6D7;
     height:2px;
     padding:0;
 }
@@ -1422,114 +1425,9 @@ div.right {
     width:33%;
 }
 
-
-
-
-/* New ComfortUpdate */
-
-.updater-background p,
-#updaterContent p {
-    text-align:left;
-}
-
-.on {
-   font-weight: bold;
-   font-size: 1em;
-   padding-left : 0.5em;
-   padding-top : 0.5em;
-}
-
-.off {
-    font-size: 0.9em;
-    padding-left : 0.5em;
-    padding-top : 0.5em;
-}
-
-#localChecksContainer {
-    min-height: 190px;
-}
-
-/*Quick hack for LS 2.06 surveys menu*/
-label, legend {
-    display : inline-block;
-    font-family: verdana, arial, sans-serif;
-    text-align: left;
-    background-color: #fefefe;
-    color: #666;
-}
-
-#updaterContent{
-    width: 890px;
-    float: left;
-}
-
-#progressContainer{
-    width: 220px;
-    float: left;
-}
-
-#welcomeMessageContainer{
-    width: 510px;
-    float: left;
-    border-right:1px solid #EEE;
-    padding-top:1em;
-}
-
-#welcomeMessageContainer p{
-    text-align:left;
-}
-
-#welcomeMessageContainer li{
-    list-style-type:square;
-    overflow:visible;
-}
-
-#welcomeMessageContainerButtons{
-	float: left;
-}
-
-#keyInfos{
-	width: 320px;
-	float: left;
-	padding-left: 20px;
-	background-color: #fff;
-}
-
-#keyInfosbuttons{
-	float: right;
-	clear: both;
-	padding-top: 100px;
-}
-
-.checkLine{
-	float: left;
-}
-
-.resultLine{
-	float: right;
-}
-
-#ajaxupdaterLayoutLoading{
-	text-align : center;
-	margin-top: 200px;
-	margin-bottom: 200px;
-	display: none;
-}
-
-#udapteButtonsContainer{
-	text-align: center;
-}
-
-#ajaxContainerLoading{
-	text-align : center;
-	margin-top: 70px;
-	margin-bottom: 100px;
-	display: none;
-}
-
 /* Statistics filter */
 .filtertable  {
-    background:#EFFBDB;
+    background:#F6E6D7;
     text-align:center;
     margin:5px auto;
     border:1px #fff solid;
@@ -1713,7 +1611,7 @@ ol.organizer {
 }
 
 .organizer li ol li div{
-    background-color:#EFFBDB;
+    background-color:#F6E6D7;
     color:#666;
 }
 
@@ -1797,11 +1695,11 @@ ui-jqgrid-btable table, .ui-pg-table table{
 }
 
 .cke_skin_office2003 .cke_top, .cke_skin_office2003 .cke_bottom, .cke_shared .cke_skin_office2003 {
-    background-color: #EFFBDB !important;
+    background-color: #F6E6D7 !important;
 }
 
 .cke_skin_office2003 .cke_button a:hover, .cke_skin_office2003 .cke_button a:focus, .cke_skin_office2003 .cke_button a:active {
-    background-color: #EFFBDB !important;
+    background-color: #F6E6D7 !important;
     border: 1px solid #94D200 !important;
 }
 
@@ -1959,7 +1857,7 @@ td.LEMerror  {
     top: 0.7em;
 }
 .ui-pager-control,.ui-search-toolbar > th.ui-th-column{
-    background: #F4FFDB !important;
+    background: #F7eee3 !important;
 }
 
 /* Edit answer and sub-question action buttons */
